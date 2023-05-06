@@ -13,7 +13,6 @@ function callFunctions() {
     menuActive.classList.toggle('fa-x')
   })
 
-  console.log('foi')
 }
 
 callFunctions()
