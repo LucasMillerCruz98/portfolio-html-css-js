@@ -99,6 +99,7 @@ header .primary-navigation li a {
 .typing::after {
   content: '|';
   margin-left: .5rem;
+  color: #dc3545;
   opacity: 1;
   animation: blink .5s infinite;
 }
@@ -256,5 +257,45 @@ img {
 
   to {
     transform: translate3d(0, 0, 0);
+  }
+}
+
+@media(max-width: 992px) {
+
+  header i {
+    color: #f7f7f7;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  
+  .section-download-cv {
+    background-image: url('../img/my-photo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .section-download-cv div p {
+    font-weight: 700;
+  }
+
+  .section-download-cv div {
+    width: 40rem;
+  }
+  
+  .menu .primary-navigation {
+    display: none;
+  }
+  
+  .section-download-cv img {
+    display: none;
+  }
+  
+  .about img {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  .about-content {
+    grid-column: 1/-1;
   }
 }
